@@ -1,0 +1,5 @@
+sudo yum httpd
+sudo service httpd start
+sudo service httpd status
+
+sudo service httpd restart

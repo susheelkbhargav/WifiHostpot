@@ -1,0 +1,43 @@
+Cloud features that distinguish today's clouds
+
+Massive scale. 
+
+On demand access: Pay as you go, no upfront commitment. Anyone can access it
+
+Data Intensive nature: size of data is increasing in the order of exabytes
+
+Cloud Programming Paradigms: makes it easier to process data 
+
+e.g: MapReduce, it's open source implementation Hadoop
+
+Storage engine which allow us to store the data and query it fairly efficiently
+ Cassandra (Key value storage)
+ NoSql storage (Mongo DB)
+ 
+
+ 
+ On demand Access - XaaS classification
+ 
+ you decided to run vm ware /xen on your cluster and will be using that to provide on demand access
+ 
+ In MapReduce, one writes a program for Map that processes one input line at a time and outputs a (key, value) or nothing; and one writes a program for Reduce that processes an input of (key, all values for key). The iteration over input lines is done automatically by the MapReduce framework. You are given an input file containing information from an asymmetrical social network (e.g,. Twitter) about which users “follow” which other users. If user a follows b, the entry line is (a, b). In an input line, a and b are different from each other. You need to write a MapReduce program that outputs all pairs of users (a,b) who follow each other. Someone has written half of a MapReduce program where the shuffle traffic has key = (a,b), i.e., a pair of users. The Reduce function invoked on this key counts the number of occurrences of this key and if this count is 2, outputs the key as its final result.
+
+You’re asked to write the Map function that takes as input (a,b) lines. The Map function should do the following: (1 point)
+ 
+ 
+each container in seven machines- 2.2ghz, 4 gb ram, 250 gb hard disk
+
+
+ google indexing done by map reduce jobs
+ 
+ Sample cost calculation for a medium scale data center:
+ 
+ Wish to run a service for M months
+ 
+ service requires 128 servers (1024 cores) amd 524 TB 
+ s3 $0.12 pergbpermonth
+ 
+ Tiny OS which runs on small sensor nodes
+ 
+ Cloud Co-ordination [paxos, leader election, snapshots]
+ 
